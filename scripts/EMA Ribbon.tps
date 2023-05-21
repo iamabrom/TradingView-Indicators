@@ -1,7 +1,7 @@
 // author: @iamAbrom
 // License: https://github.com/iamabrom/TradingView-Indicators/blob/main/LICENSE
 //@version=3
-study(title="EMA Ribbon w/200", shorttitle="EMA Ribbon", overlay=true)
+study(title="EMA Ribbon w/200", shorttitle="EMA Ribbon w/200", overlay=true)
 
 dropn(src, n) =>
     na(src[n]) ? na : src
@@ -19,14 +19,14 @@ dropCandles = input(1, minval=0, title="Drop first N candles")
 
 price = dropn(src, dropCandles)
 
-plot(ema(price, length1), title="MA-1", color=#f5eb5d, transp=0, linewidth=2)
-plot(ema(price, length2), title="MA-2", color=#f5b771, transp=0, linewidth=2)
-plot(ema(price, length3), title="MA-3", color=#f5b056, transp=0, linewidth=2)
-plot(ema(price, length4), title="MA-4", color=#f57b4e, transp=0, linewidth=2)
-plot(ema(price, length5), title="MA-5", color=#f56d58, transp=0, linewidth=2)
-plot(ema(price, length6), title="MA-6", color=#f57d51, transp=0, linewidth=2)
-plot(ema(price, length7), title="MA-7", color=#f55151, transp=0, linewidth=2)
-plot(ema(price, length8), title="MA-8", color=#aa2707, transp=0, linewidth=2)
+plot(ema(price, length1), title="MA-1", color=#f5eb5d, transp=0, linewidth=1)
+plot(ema(price, length2), title="MA-2", color=#f5b771, transp=0, linewidth=1)
+plot(ema(price, length3), title="MA-3", color=#f5b056, transp=0, linewidth=1)
+plot(ema(price, length4), title="MA-4", color=#f57b4e, transp=0, linewidth=1)
+plot(ema(price, length5), title="MA-5", color=#f56d58, transp=0, linewidth=1)
+plot(ema(price, length6), title="MA-6", color=#f57d51, transp=0, linewidth=1)
+plot(ema(price, length7), title="MA-7", color=#f55151, transp=0, linewidth=1)
+plot(ema(price, length8), title="MA-8", color=#aa2707, transp=0, linewidth=1)
 
-long = ema(close, 200)
-plot(long, color = yellow)
+longema = ema(close, 200)
+plot(longema, color = yellow, linewidth=2)
