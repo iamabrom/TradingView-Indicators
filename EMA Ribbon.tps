@@ -1,3 +1,5 @@
+// author: @iamAbrom
+// License: https://github.com/iamabrom/TradingView-Indicators/blob/main/LICENSE
 //@version=3
 study(title="EMA Ribbon w/200", shorttitle="EMA Ribbon", overlay=true)
 

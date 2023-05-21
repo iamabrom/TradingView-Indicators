@@ -1,10 +1,6 @@
-# // gh0stface | http://gh0stface.com/
-# // ***************************************************************************
-# // Description: This is taking the basic MACD study and creating buy/sell indicators
-# //              This is designed to be used on top of your main chart and will not plot the actual MA lines, but rather just the indicators
-# //              The original intent of this was to use with Bitcoin (BTC) against a 12 hour chart and using MACD values of 20 (fast) & 40 (slow)
-# //              Backtesting of this stratgey would have yielded a 220% return from the Jan 2020 to Jan 2021 timeframe.
-# // ***************************************************************************
+// author: @iamAbrom
+// License: https://github.com/iamabrom/TradingView-Indicators/blob/main/LICENSE
+//@version=3
 
 study(title="MACD Crossover for Crypto", overlay=true)
 fMA = input(title="Fast Moving Average", type = integer, defval = 20, minval = 7)
